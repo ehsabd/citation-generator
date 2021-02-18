@@ -4,6 +4,7 @@
 <div>Author(s)</div>
 <div>
     <app-author *ngFor="let author of authors" [author]="author"></app-author>
+    <button (click)="addAuthor()">+</button>
 </div>
 
 <div>Journal Title</div>
