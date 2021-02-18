@@ -1,4 +1,10 @@
-# CitationGenerator
+# Citation Generator
+
+An Angular web application for generating citations.
+
+Currently supports **APA formatting** for only **journal articles**.
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
 
