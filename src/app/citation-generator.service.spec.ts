@@ -14,7 +14,7 @@ describe('CitationGeneratorService',()=>{
             {initials:'M.',  lastName:'Major'});
         let journalArticle = new JournalArticle();
         journalArticle.authors = authors;
-        expect(service.getAuthorsPart(journalArticle)).toEqual('Doe J., & Major M.');
+        expect(service.getAuthorsPart(journalArticle)).toEqual('Doe, J., & Major, M.');
 
 
 
