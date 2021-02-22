@@ -5,7 +5,7 @@ export class CitationGeneratorService {
   getAuthorsPart(source: JournalArticle){
     const authors = source.authors;
     if (authors.length<20){
-        return `${authors.slice(0, authors.length-1).join(', ')}, & ${authors[authors.length-1]}`;
+        return `${authors.slice(0, authors.length-1).map(a=>a.toString()).join(', ')}, & ${authors[authors.length-1].toString()}`;
     }else{
         return '';//TODO
     }
