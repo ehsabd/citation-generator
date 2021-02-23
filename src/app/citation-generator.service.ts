@@ -10,7 +10,10 @@ export class CitationGeneratorService {
 
   getAuthorsPart(source: JournalArticle){
     const authors = source.authors;
-    if (authors.length<20){
+    if (authors.length==1){
+      return this.getAuthorString(authors[0]);
+    }
+    else if (authors.length<20){
         return `${authors.slice(0, authors.length-1).map(a=>this.getAuthorString(a)).join(', ')}, & ${this.getAuthorString(authors[authors.length-1])}`;
     }else{
         return '';//TODO
@@ -18,6 +21,7 @@ export class CitationGeneratorService {
   }
   
   getCitation(source: JournalArticle) {
-    
+    const authorsPart = this.getAuthorsPart(source);
+    return `${authorsPart} (${source.year}). ${source.title}. ${source.journalTitle}, ${source.volume}(${source.issue}), ${source.fromPage}-${source.toPage}. ${source.doi || source.url}`
   }
 }
