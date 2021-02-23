@@ -34,7 +34,7 @@ describe('CitationGeneratorService',()=>{
         a.authors.push({initials:'A. A.', lastName:'Scholer'})
         a.authors.push({initials:'D. B.', lastName:'Miele'})
         a.authors.push({initials:'K.', lastName:'Fujita'})
-
+        a.year = 2019;
         a.title = 'Metamotivational knowledge of the role of high-level and low-level construal in goal-relevant task performance';
         a.journalTitle = 'Journal of Personality and Social Psychology';
         a.volume = '117';
