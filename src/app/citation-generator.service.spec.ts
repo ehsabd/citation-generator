@@ -41,7 +41,7 @@ describe('CitationGeneratorService',()=>{
         a.issue = '5';
         a.fromPage = '879';
         a.toPage = '899';
-        a.doi = 'http://dx.doi.org/10.1037/pspa000016'
+        a.doi = 'http://dx.doi.org/10.1037/pspa0000166'
 
         expect(service.getCitation(a)).toEqual('Nguyen, T., Carnevale, J. J., Scholer, A. A., Miele, D. B., & Fujita, K. (2019). Metamotivational knowledge of the role of high-level and low-level construal in goal-relevant task performance. Journal of Personality and Social Psychology, 117(5), 879-899. http://dx.doi.org/10.1037/pspa0000166')
     })

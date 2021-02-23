@@ -21,6 +21,7 @@ export class CitationGeneratorService {
   }
   
   getCitation(source: JournalArticle) {
-    
+    const authorsPart = this.getAuthorsPart(source);
+    return `${authorsPart} (${source.year}). ${source.title}. ${source.journalTitle}, ${source.volume}(${source.issue}), ${source.fromPage}-${source.toPage}. ${source.doi || source.url}`
   }
 }
