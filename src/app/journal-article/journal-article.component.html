@@ -8,22 +8,29 @@
 </div>
 
 <div>Journal Title</div>
-
+<input [(ngModel)]="title">
 
 <div>From page</div>
+<input [ngModel]="fromPage">
 <div>To page</div>
-
+<input [ngModel]="toPage">
 <div>Volume</div>
+<input [ngModel]="volume">
 <div>Issue</div>
-<div>Publication date</div>
+<input [ngModel]="issue">
 
+<div>Publication date:</div>
 <div>Year</div>
-<div>YYYY</div>
+<input [ngModel]="year">
+
 <div>DOI or URL</div>
 
 <div>DOI</div>
+<input [ngModel]="doi">
 <div>URL</div>
-<div>DOI</div>
+<input [ngModel]="url">
 
 <div>Publication status</div>
-
+<!--TODO bind this to isInPress-->
+<div>APA Citation:</div>
+{{citation}}
